@@ -98,7 +98,7 @@ var Bookmarks = React.createClass({
   },
 
   renderBookmarks: function() {
-    var add = (<View key={"add-site"} style={[styles.bookmark, {margin: this.state.itemMargin}]}><AddSiteButton onPress={this.addNewSite} key={"add-site"} /></View>)
+    var add = (<View key={"add-site"} style={[styles.bookmark, {margin: this.state.itemSpacing}]}><AddSiteButton onPress={this.addNewSite} key={"add-site"} /></View>)
     return [add].concat(this.state.sites.map((site, i) => {
       return (
         <View key={i} style={[styles.bookmark, {margin: this.state.itemSpacing}]}>
