@@ -22,15 +22,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		CC624C221C46D4AF00411D47 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC624C211C46D4AF00411D47 /* HTMLReader.framework */; };
+		CC624C2D1C46D4B600411D47 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC624C211C46D4AF00411D47 /* HTMLReader.framework */; };
+		CC624C2E1C46D4B600411D47 /* HTMLReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC624C211C46D4AF00411D47 /* HTMLReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCAAD6DE1C44655800F25C8C /* SiteDetailLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAAD6DD1C44655800F25C8C /* SiteDetailLoader.m */; };
 		CCAAD6E91C44841300F25C8C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAAD6E81C44841300F25C8C /* NSString+MD5.m */; };
 		CCAAD6EC1C44AA9E00F25C8C /* DetailFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAAD6EB1C44AA9E00F25C8C /* DetailFinder.m */; };
 		CCBCD28E1C463AA1008ABC10 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
-		CCBCD29E1C46B688008ABC10 /* HTMLReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAAD6E11C4478EF00F25C8C /* HTMLReader.framework */; };
-		CCBCD29F1C46B688008ABC10 /* HTMLReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCAAD6E11C4478EF00F25C8C /* HTMLReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CCBCD2A31C46C94C008ABC10 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBCD2A21C46C94C008ABC10 /* HockeySDK.framework */; };
-		CCBCD2A41C46C954008ABC10 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBCD2A21C46C94C008ABC10 /* HockeySDK.framework */; };
-		CCBCD2A51C46C954008ABC10 /* HockeySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCBCD2A21C46C94C008ABC10 /* HockeySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,14 +112,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CCBCD2A01C46B688008ABC10 /* Embed Frameworks */ = {
+		CC624C2F1C46D4B600411D47 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CCBCD2A51C46C954008ABC10 /* HockeySDK.framework in Embed Frameworks */,
-				CCBCD29F1C46B688008ABC10 /* HTMLReader.framework in Embed Frameworks */,
+				CC624C2E1C46D4B600411D47 /* HTMLReader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,15 +147,14 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		CC624C211C46D4AF00411D47 /* HTMLReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTMLReader.framework; path = Carthage/Build/iOS/HTMLReader.framework; sourceTree = "<group>"; };
 		CCAAD6DC1C44655800F25C8C /* SiteDetailLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SiteDetailLoader.h; path = Bookmarks/SiteDetailLoader.h; sourceTree = "<group>"; };
 		CCAAD6DD1C44655800F25C8C /* SiteDetailLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SiteDetailLoader.m; path = Bookmarks/SiteDetailLoader.m; sourceTree = "<group>"; };
 		CCAAD6DF1C4471D300F25C8C /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
-		CCAAD6E11C4478EF00F25C8C /* HTMLReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTMLReader.framework; path = Carthage/Build/iOS/HTMLReader.framework; sourceTree = "<group>"; };
 		CCAAD6E71C44841300F25C8C /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "Bookmarks/NSString+MD5.h"; sourceTree = "<group>"; };
 		CCAAD6E81C44841300F25C8C /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "Bookmarks/NSString+MD5.m"; sourceTree = "<group>"; };
 		CCAAD6EA1C44AA9E00F25C8C /* DetailFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailFinder.h; path = Bookmarks/DetailFinder.h; sourceTree = "<group>"; };
 		CCAAD6EB1C44AA9E00F25C8C /* DetailFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailFinder.m; path = Bookmarks/DetailFinder.m; sourceTree = "<group>"; };
-		CCBCD2A21C46C94C008ABC10 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = Carthage/Build/iOS/HockeySDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,17 +171,16 @@
 			files = (
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
-				CCBCD29E1C46B688008ABC10 /* HTMLReader.framework in Frameworks */,
+				CC624C221C46D4AF00411D47 /* HTMLReader.framework in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
+				CC624C2D1C46D4B600411D47 /* HTMLReader.framework in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
-				CCBCD2A31C46C94C008ABC10 /* HockeySDK.framework in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				CCBCD2A41C46C954008ABC10 /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +347,7 @@
 		CCAAD6E31C4478F700F25C8C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				CCBCD2A21C46C94C008ABC10 /* HockeySDK.framework */,
-				CCAAD6E11C4478EF00F25C8C /* HTMLReader.framework */,
+				CC624C211C46D4AF00411D47 /* HTMLReader.framework */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -387,7 +381,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				CCBCD2A01C46B688008ABC10 /* Embed Frameworks */,
+				CC624C2F1C46D4B600411D47 /* Embed Frameworks */,
 				CCBCD2A11C46B7B2008ABC10 /* Carthage copy-frameworks */,
 			);
 			buildRules = (
@@ -411,6 +405,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 99KV9Z6BKV;
 					};
 				};
 			};
@@ -590,7 +587,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/HTMLReader.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/HockeySDK.framework",
 			);
 			name = "Carthage copy-frameworks";
 			outputPaths = (
@@ -688,6 +684,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -711,6 +708,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

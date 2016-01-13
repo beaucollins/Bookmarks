@@ -11,8 +11,6 @@
 
 #import "RCTRootView.h"
 
-@import HockeySDK;
-
 const NSString *HockeyAppID = @"e2d7a0b5734b4c5494641b6316081589";
 
 @implementation AppDelegate
@@ -43,14 +41,11 @@ const NSString *HockeyAppID = @"e2d7a0b5734b4c5494641b6316081589";
    */
 
 #if DEBUG
-  jsCodeLocation = [NSURL URLWithString:@"http://vader.local:8081/index.ios.bundle?platform=ios&dev=true"];
-#elif RELEASE
+//  jsCodeLocation = [NSURL URLWithString:@"http://vader.local:8081/index.ios.bundle?platform=ios&dev=true"];
+  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#else
   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
-  
-  
-  
-  NSLog(@"Loading app from %@", jsCodeLocation);
   
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"Bookmarks"
@@ -62,11 +57,6 @@ const NSString *HockeyAppID = @"e2d7a0b5734b4c5494641b6316081589";
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-
-  [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:HockeyAppID];
-  // Do some additional configuration if needed here
-  [[BITHockeyManager sharedHockeyManager] startManager];
-  [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation]; // This line is obsolete in the crash only builds
 
   return YES;
 }
